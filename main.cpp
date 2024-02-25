@@ -29,11 +29,6 @@ bool is_even(int number) {
     else
         return false;
 }
-assert(map({1,2,3,4,5},[] (int x) {x*x}) == {1,4,9,16,25});
-assert(filter({1,2,3,4,5}, [] (int x) {if (number % 2 == 0)
-        return true;
-    else
-        return false;})== {2,4});
 assert(square(2) == 4);
 assert(is_even(2) == true);
 int main() {
