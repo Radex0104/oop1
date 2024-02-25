@@ -7,6 +7,7 @@ std::vector<int> map(std::vector<int> numbers, int (*func)(int)) {
     for (int num : numbers) {
         result.push_back(func(num));
     }
+    assert(square(2) == 4);
     return result;
 }
 
@@ -16,6 +17,7 @@ std::vector<int> filter(std::vector<int> numbers, bool (*func)(int)) {
         if (func(num) == true)
         result.push_back(num);
     }
+    assert(is_even(2) == true);
     return result;
 }
 
@@ -29,8 +31,6 @@ bool is_even(int number) {
     else
         return false;
 }
-assert(square(2) == 4);
-assert(is_even(2) == true);
 int main() {
     std::vector<int> numbers = { 1, 2, 3, 4, 5 };
     auto results = map(numbers, square);
