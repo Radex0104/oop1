@@ -21,11 +21,10 @@ std::vector<int> filter(std::vector<int> numbers, bool (*func)(int)) {
     return result;
 }
 
-int square(int x) {
+std::int square(int x) {
     return x * x;
 }
-
-bool is_even(int number) {
+std::bool is_even(int number) {
     if (number % 2 == 0)
         return true;
     else
