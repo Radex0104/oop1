@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<cassert>
 
 std::vector<int> map(std::vector<int> numbers, int (*func)(int)) {
     std::vector<int> result;
