@@ -50,6 +50,5 @@ int main() {
     for (auto nums : results2)
         cout << nums << " ";
     cout << endl;
-    system("pause");
     return 0;
 }
