@@ -1,11 +1,8 @@
-#include<iostream>
-#include<vector>
-#include<cassert>
+#include<main.h>
 using namespace std;
 
 std::vector<int> map(std::vector<int> numbers, int (*func)(int)) {
     std::vector<int> result;
-    assert(!numbers.empty());
     for (int num : numbers) {
         result.push_back(func(num));
     }
@@ -14,7 +11,6 @@ std::vector<int> map(std::vector<int> numbers, int (*func)(int)) {
 
 std::vector<int> filter(vector<int> numbers, bool (*func)(int)) {
     std::vector<int> result;
-    assert(!numbers.empty());
     for (int num : numbers) {
         if (func(num) == true)
             result.push_back(num);
@@ -33,11 +29,6 @@ bool is_even(int number) {
         return false;
 }
 
-void test()
-{
-    assert(square(2) == 4);
-    assert(is_even(2) == true);
-}
 int main() {
     
     std::vector<int> numbers = { 1, 2, 3, 4, 5 };
