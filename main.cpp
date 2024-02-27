@@ -1,18 +1,18 @@
 #include"main.h"
 
 int main() {
-    
-    vector<int> numbers = { 1, 2, 3, 4, 5 };
-    n1::test(numbers);
-    auto results = n1::map(numbers, square);
-    for(auto num : results)
-        cout << num << " ";
-    cout << endl;
-    auto results2 = n1::filter(numbers, is_even);
+
+    std::vector<int> numbers = { 1, 2, 3, 4, 5 };
+    function::test(numbers);
+    auto results = function::map(numbers, function::square);
+    for (auto num : results)
+        std::cout << num << " ";
+    std::cout << std::endl;
+    auto results2 = function::filter(numbers, function::is_even);
     for (auto nums : results2)
-        cout << nums << " ";
-    cout << endl;
-    n2::testIsEven();
-    n2::game();
+        std::cout << nums << " ";
+    std::cout << std::endl;
+    game::testIsEven();
+    game::game();
     return 0;
 }
