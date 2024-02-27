@@ -1,6 +1,8 @@
-#include<iostream>
-#include<vector>
-#include<cassert>
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <cassert>
 using namespace std;
 vector<int> map(std::vector<int> numbers, int (*func)(int)) {
     vector<int> result;
