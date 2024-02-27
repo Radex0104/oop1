@@ -32,7 +32,7 @@ bool is_even(int number) {
 int main() {
     
     std::vector<int> numbers = { 1, 2, 3, 4, 5 };
-    test();
+    test(numbers);
     auto results = map(numbers, square);
     for(auto num : results)
         cout << num << " ";
