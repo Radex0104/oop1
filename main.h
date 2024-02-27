@@ -5,7 +5,7 @@
 #include <cassert>
 using namespace std;
 namespace n1 {
-    vector<int> map(std::vector<int> numbers, int (*func)(int)) {
+    std::vector<int> map(std::vector<int> numbers, int (*func)(int)) {
         vector<int> result;
         for (int num : numbers) {
             result.push_back(func(num));
@@ -13,7 +13,7 @@ namespace n1 {
         return result;
     }
     
-    vector<int> filter(vector<int> numbers, bool (*func)(int)) {
+    std::vector<int> filter(std::vector<int> numbers, bool (*func)(int)) {
         vector<int> result;
         for (int num : numbers) {
             if (func(num) == true)
