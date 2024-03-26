@@ -13,6 +13,5 @@ int main() {
         std::cout << nums << " ";
     std::cout << std::endl;
     game::testIsEven();
-    game::game();
     return 0;
 }
